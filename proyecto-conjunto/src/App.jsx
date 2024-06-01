@@ -2,13 +2,36 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import  {Buttonjorge} from './components/ComponenteJorge'
+import { Title } from './components/ComponenteJorgePersonalizado'
+import ImageComponent from './ImageComponent'
+
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+   
       <div>
+      <Buttonjorge />
+
+    <Title>
+       Hello World!
+     </Title>
+
+     <div>
+      <h1>My React App</h1>
+      <ImageComponent
+        src="https://example.com/image.jpg"
+        alt="Description of image"
+        width="300px"
+        height="200px"
+        className="my-image-class"
+      />
+    </div>
+  
+
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
