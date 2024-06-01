@@ -23,7 +23,7 @@ function App() {
      <div>
       <h1>My React App</h1>
       <ImageComponent
-        src="https://example.com/image.jpg"
+        src="https://res.cloudinary.com/dq186ej4c/image/upload/v1689761508/pngwing.com_r0hr9b.png"
         alt="Description of image"
         width="300px"
         height="200px"
