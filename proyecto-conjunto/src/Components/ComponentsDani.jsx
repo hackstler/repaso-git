@@ -14,19 +14,19 @@ const theme = extendTheme({
   },
 });
 
-export const ImageComponent = ({ src, alt, width, height, className }) => {
+const ImageComponent = ({ src, alt, width, height, className }) => {
   return (
-    <Box>
-      <Image
-        src={src}
-        alt={alt}
-        width={width}
-        height={height}
-        className={`my-image-class ${className}`}
-        borderRadius="10px"
-        boxShadow="0 4px 8px rgba(0, 0, 0, 0.1)"
-      />
-    </Box>
+    <ChakraProvider theme={theme}>
+      <Box>
+        <Image
+          src={src}
+          alt={alt}
+          width={width}
+          height={height}
+          className={`my-image-class ${className}`}
+        />
+      </Box>
+    </ChakraProvider>
   );
 };
 
@@ -38,22 +38,17 @@ ImageComponent.propTypes = {
   className: PropTypes.string,
 };
 
-// Componente principal que incluye ChakraProvider
-export const App = () => {
+// Ejemplo de cómo utilizar ImageComponent en tu aplicación
+const Images = () => {
   return (
-    <ChakraProvider theme={theme}>
-      <div>
-        <h1>My React App</h1>
-        <ImageComponent
-          src="https://example.com/image.jpg"
-          alt="Description of image"
-          width="300px"
-          height="200px"
-          className="additional-class"
-        />
-      </div>
-    </ChakraProvider>
+    <ImageComponent
+      src="https://example.com/image.jpg"
+      alt="Description of image"
+      width="300px"
+      height="200px"
+      className="additional-class"
+    />
   );
 };
 
-
+export default Images;
