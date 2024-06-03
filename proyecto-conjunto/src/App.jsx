@@ -5,8 +5,8 @@ import './App.css'
 import  {Buttonjorge} from './components/ComponenteJorge'
 import { Title } from './components/ComponenteJorgePersonalizado'
 import {ImageComponent} from './components/ComponentsDani'
-
 import { ButtonHelen } from './components/ComponenteElena'
+import CustomSwitch from './components/component-barb'
 
 function App() {
   return (
@@ -21,7 +21,9 @@ function App() {
       <Buttonjorge />
       <Title> HEllo World </Title>
       <ButtonHelen />
-
+      <CustomSwitch />
+     
+      
     </>
   )
 }
