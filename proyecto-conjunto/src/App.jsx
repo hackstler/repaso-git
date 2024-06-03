@@ -4,7 +4,7 @@
 import './App.css'
 import  {Buttonjorge} from './components/ComponenteJorge'
 import { Title } from './components/ComponenteJorgePersonalizado'
-import {ImageComponent} from './components/ComponentsDani'
+import { ImageComponent} from './components/ComponentsDani'
 
 import { ButtonHelen } from './components/ComponenteElena'
 
